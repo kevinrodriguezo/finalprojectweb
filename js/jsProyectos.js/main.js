@@ -18,12 +18,12 @@ var Persister = {
 };
 
 function load_data() {
-
 	proyectos = Persister.loadObj('proyectos', "[]");
 	$('#proyectos').html('');
 	for (var i = 0; i < proyectos.length; i++) {
 		var link = '<a href="editProyectos.html">'+proyectos[i].nombre+'</a>';
-		$('#proyectos').append('<li>' + link + '</li>');
+		$('#proyectos').append('<li id=' + i + '>' + link + '</li>');
+			
 	}
 }
 
@@ -47,6 +47,7 @@ $(document).ready(function()
 		AbrirNuevaVentana();
 		CerrarVentanaActual();
 	});
+	
 		
 	function CerrarVentanaActual()
 {
@@ -55,6 +56,8 @@ $(document).ready(function()
 function AbrirNuevaVentana() {
 	window.open("index.html");
 }
+
+
 });
 
 
