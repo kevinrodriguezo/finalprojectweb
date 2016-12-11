@@ -44,12 +44,12 @@
 		<div class="w3-content w3-padding" id="pro">
 			<!-- Project Section -->
 			<div class="w3-container w3-padding-32" id="projects">
-				<h3 class="w3-border-bottom w3-border-black-grey w3-padding-12">Nuevo Proyecto &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="w3-btn w3-round-xlarge">+</button></h3>
+				<h3 class="w3-border-bottom w3-border-black-grey w3-padding-12">Nuevo Proyecto</h3>
 			</div>
 			<form name="formulario">
 			<label>Nombre del Proyecto</label>
 			<br>
-			<input type="text" name="NombreProyecto"><br>
+			<input type="text" id="NombreProyecto"><br>
 			<br>
 			<label>Fecha de Inicio:</label>
 			<br>
@@ -66,7 +66,7 @@
 			<input type="text" name="subirIcon">
 			<br>
 			<br>
-			<button onclick="guardar()">Guardar</button>
+			<button id="guardar" onclick="guardar()">Guardar</button>
 			</form>
 				<ul id="proyectos">
 				

@@ -20,8 +20,20 @@ var Persister = {
 function load_data() {
 	proyectos = Persister.loadObj('proyectos', "[]");
 	$('#proyectos').html('');
-	for (var i = 0; i < animales.length; i++) {
-		$('#animales').append('<li>' + animales[i].nombre + '</li>');
+	for (var i = 0; i < proyectos.length; i++) {
+		$('#proyectos').append('<li>' + proyectos[i].nombre + '</li>');
 	}
 }
+
+$(document).ready(function() 
+{
+	load_data();
+	$('#guardar').click(function(event) {
+		var proyecto = $('#NombreProyecto').val();
+		animales.push({nombre: proyecto});
+		Persister.saveObj('animales', animales);
+		$('#proyectos').append('<li>' + proyecto + '</li>');
+	});
+
+});
 
