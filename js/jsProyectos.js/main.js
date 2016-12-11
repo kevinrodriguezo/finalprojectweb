@@ -18,22 +18,43 @@ var Persister = {
 };
 
 function load_data() {
+
 	proyectos = Persister.loadObj('proyectos', "[]");
 	$('#proyectos').html('');
 	for (var i = 0; i < proyectos.length; i++) {
-		$('#proyectos').append('<li>' + proyectos[i].nombre + '</li>');
+		var link = '<a href="editProyectos.html">'+proyectos[i].nombre+'</a>';
+		$('#proyectos').append('<li>' + link + '</li>');
 	}
 }
 
 $(document).ready(function() 
 {
 	load_data();
-	$('#guardar').click(function(event) {
+	debugger;
+	$('#guardar').click(function() {
+		debugger;
 		var proyecto = $('#NombreProyecto').val();
-		animales.push({nombre: proyecto});
-		Persister.saveObj('animales', animales);
-		$('#proyectos').append('<li>' + proyecto + '</li>');
-	});
+		var fecha = $('#fecha').val();
+		var per = $('#NumeroPersonas').val();
+		var numPersonas = parseInt(per);
+		var icon = $('#subirIcon').val();
+		var estado = $('#Estado').val();
+		proyectos.push({nombre: proyecto, fecha: fecha, numeroPers: numPersonas,
+			icon: icon, estado: estado});
+		Persister.saveObj('proyectos', proyectos);
 
+		$('#proyectos').append('<li>'+ proyecto +'</li>');
+		AbrirNuevaVentana();
+		CerrarVentanaActual();
+	});
+		
+	function CerrarVentanaActual()
+{
+  window.close();
+}
+function AbrirNuevaVentana() {
+	window.open("index.html");
+}
 });
+
 

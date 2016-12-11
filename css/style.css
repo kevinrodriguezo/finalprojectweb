@@ -12,3 +12,26 @@ a:active {
 #agre{
 	margin-top: -100px;
 }
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: -1000%;
+}
+
+td, th {
+    border: 4px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    margin-right: -1000%;
+    margin-right: 10000px;
+    margin: -1000%;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+.a{
+
+	margin-left: -1000px;
+}
