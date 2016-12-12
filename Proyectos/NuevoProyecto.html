@@ -26,36 +26,17 @@
 		<div class="w3-content w3-padding" id="pro">
 			<!-- Project Section -->
 			<div class="w3-container w3-padding-32" id="projects">
-				<h3 class="w3-border-bottom w3-border-black-grey w3-padding-12">Nuevo Proyecto</h3>
+				<h3 class="w3-border-bottom w3-border-black-grey w3-padding-12">Nuevo Proyecto&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Agregar tarea &nbsp;&nbsp;&nbsp;&nbsp;<a href="../Tareas/index.html" target="_blanc"><button class="w3-btn w3-round-xlarge">+</button></a></h3>
 			</div>
-			<form name="formulario">
-			<label>Nombre del Proyecto</label>
-			<br>
-			<input type="text" id="NombreProyecto"><br>
-			<br>
-			<label>Fecha de Inicio:</label>
-			<br>
-			<input type="date" id="fecha">
-			<br>
-			<br>
-			<label>Numero de Personas aociadas al proyecto:</label>
-			<br>
-			<input type="number" min="1" required="required" id="NumeroPersonas">
-			<br>		
-			<br>		
-			<label>ICON:</label>
-			<br>
-			<input type="text" id="subirIcon">
-			<br>
-			<br>
-			<label>Estado del Proyecto</label>
-			<br>
-			<input type="text" id="Estado">
-			<br>
-			<br>
-			<button id="guardar">Guardar</button>
-			</form>
-			
+			<form action="form.asp" target="_blank">
+      <input id="NombreProyecto" class="w3-input" type="text" placeholder="Nombre Proyecto" required name="Name">
+      <input type="date" id="fecha" class="w3-input w3-section" placeholder="Fecha" required name="Email">
+      <input type="number" min="1" class="w3-input w3-section" placeholder="Numero Personas" required name="Personas Numero">
+      <input type="text" id="Estado" class="w3-input w3-section" placeholder="Estado del Proyecto" required name="Estado">
+      <button id="guardar" type="submit" class="w3-btn w3-section">
+        <i class="fa fa-paper-plane"></i> Enviar Mensaje
+      </button>
+    </form>
 			<!-- End page content -->
 		</div>
 		<!-- Footer -->

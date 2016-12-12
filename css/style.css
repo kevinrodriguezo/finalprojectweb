@@ -72,6 +72,22 @@ border-bottom-style: dotted;
 border-left-style: dotted;
 }
 
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
 a:active {
 background-color: yellow;
 }
