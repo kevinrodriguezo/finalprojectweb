@@ -1,13 +1,14 @@
 $(document).ready(function() {
 	var data = [
-        { name: 'Recoger Basura', y: 20 },
-        {name: 'Hacer hueco', y: 20},
-        {name: 'Pegar Clavos', y: 20 },
-        {name: 'Comprar Concreto', y: 20 },
-        {name: 'Francisco', y: 20 },
-        {name: 'Pintar pared', y: 20 }
+        { name: 'Jonathan', y: 20 },
+        {name: 'Marcos', y: 10},
+        {name: 'Milena', y: 5 },
+        {name: 'Agustin', y: 5 },
+        {name: 'Francisco', y: 5 },
+        {name: 'Jason', y: 5 }
     ]
     draw_chart('chart-container', data);
+	draw_chart('chart-container2', data);
 });
 
 function draw_chart(selector, data) {
@@ -19,7 +20,7 @@ function draw_chart(selector, data) {
             type: 'pie'
         },
         title: {
-            text: 'Porcentaje de tareas por estado'
+            text: 'Porcentaje de ventas por vendedor'
         },
         tooltip: {
             pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
