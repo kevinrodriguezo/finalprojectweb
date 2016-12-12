@@ -27,7 +27,7 @@
 		<div class="w3-content w3-padding" id="pro">
 			<!-- Project Section -->
 			<div class="w3-container w3-padding-32" id="projects">
-				<h3 class="w3-border-bottom w3-border-black-grey w3-padding-12">Tareas &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="NuevaPersona.html" target="_blanc"><button class="w3-btn w3-round-xlarge">+</button></a></h3>
+				<h3 class="w3-border-bottom w3-border-black-grey w3-padding-12">Tareas &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=""><button class="w3-btn w3-round-xlarge" onclick="mostrar()" id="mostrar">+</button></a></h3>
 			</div>
 		</div>
 		<!-- Footer -->
@@ -37,6 +37,33 @@
 		<br>
 		<br>
 		<br>
+		<div id="agregaTarea">
+			
+				<form name="formulario">
+			<label>Nombre Tarea</label>
+			<br>
+			<input type="text" id="NombreTarea"><br>
+			<br>
+			<label>ID:</label>
+			<br>
+			<input type="text" id="Id">
+			<br>
+			<br>
+			<label>Descripcion:</label>
+			<br>
+			<input type="text" required="required" id="Descripcion">
+			<br>		
+			<br>		
+			<label>Orden:</label>
+			<br>
+			<input type="text" id="orden">
+			<br>
+			<br>
+			<button id="guardar">Guardar</button>
+			</form>
+
+
+		</div>
 
 		<div id="subcontainer1" class="flex-container">
 			<div class="item">Start</div>
@@ -72,5 +99,6 @@
 		</footer>
 		<script type="text/javascript" src="../js/jquery-2.2.4.min.js"></script>
 		<script type="text/javascript" src="../js/Tareas/main.js"></script>
+		<script type="text/javascript" src="../js/Tareas/adminTareas.js"></script>
 	</body>
 </html>

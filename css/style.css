@@ -1,3 +1,17 @@
+#agregaTarea
+{
+	display: none;
+
+}
+#mostar
+{
+
+	#agregaTarea
+	{
+		display: block;
+	}
+}
+
 .flex-container{
 width: 70%;
 height: 100px;
