@@ -47,7 +47,16 @@ $(document).ready(function()
 		AbrirNuevaVentana();
 		CerrarVentanaActual();
 	});
+
+	$('#proyectos').click(function() {
+debugger;
 	
+	var proyectos = Persister.loadObj('proyectos', '[]');
+	for (var i = 0;i < proyectos.length; i++) {
+	var name = $(#i).val();
+		if (i.NombreProyecto == name) {
+			
+		}
 		
 	function CerrarVentanaActual()
 {
