@@ -22,7 +22,7 @@ function load_data() {
 	$('#proyectos').html('');
 	for (var i = 0; i < proyectos.length; i++) {
 		var link = '<a href="editProyectos.html">'+proyectos[i].nombre+'</a>';
-		$('#proyectos').append('<li id=' + i + '>' + link + '</li>');
+		$('#proyectos').append('<li id=' + i + '>' + link + '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + proyectos[i].estado  + '</li>');
 			
 	}
 }
