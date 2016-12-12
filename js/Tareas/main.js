@@ -1,3 +1,4 @@
+debugger;
 function allowDrop(ev) {
     ev.preventDefault();
 }

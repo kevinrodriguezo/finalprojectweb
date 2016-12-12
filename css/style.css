@@ -1,17 +1,3 @@
-#agregaTarea
-{
-	display: none;
-
-}
-#mostar
-{
-
-	#agregaTarea
-	{
-		display: block;
-	}
-}
-
 .flex-container{
 width: 70%;
 height: 100px;
@@ -26,6 +12,7 @@ height: 500px;
 background-color: #c3c3c3;
 display: flex;
 margin-left: 200px;
+text-align: center;
 }
 
 
@@ -62,7 +49,7 @@ border-bottom-style: dotted;
 border-left-style: dotted;
 }
 .item1  {
-width: 300px;
+width: 350px;
 height: 500px;
 border-color:initial;
 text-align: center
@@ -73,7 +60,17 @@ border-right-style: dotted;
 border-bottom-style: dotted;
 border-left-style: dotted;
 }
+.itemAdd{
 
+	width: 300px;
+height: 50px;
+text-align: center
+justify-content:space-between;
+border-top-style: dotted;
+border-right-style: dotted;
+border-bottom-style: dotted;
+border-left-style: dotted;
+}
 
 a:active {
 background-color: yellow;
