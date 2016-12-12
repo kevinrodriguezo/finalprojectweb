@@ -1,14 +1,12 @@
 $(document).ready(function() {
 	var data = [
-        { name: 'Jonathan', y: 20 },
-        {name: 'Marcos', y: 10},
-        {name: 'Milena', y: 5 },
-        {name: 'Agustin', y: 5 },
-        {name: 'Francisco', y: 5 },
-        {name: 'Jason', y: 5 }
+        { name: 'Chucas', y: 20 },
+        {name: 'Reventazon', y: 20},
+        {name: 'San Carlos', y: 20 },
+        {name: 'Regional Liberia', y: 20 },
+        {name: 'Moin Limon', y: 20 },
     ]
     draw_chart('chart-container', data);
-	draw_chart('chart-container2', data);
 });
 
 function draw_chart(selector, data) {
@@ -20,7 +18,7 @@ function draw_chart(selector, data) {
             type: 'pie'
         },
         title: {
-            text: 'Porcentaje de ventas por vendedor'
+            text: 'Porcentaje reportes por proyecto'
         },
         tooltip: {
             pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
