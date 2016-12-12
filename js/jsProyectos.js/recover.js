@@ -8,9 +8,9 @@ debugger;
 		if (i == index) {
 			$('#NombreProyectoE').val("	nombre");
 			var a = proyectos[i].nombre;
+			$('#NombreProyecto')document.setElementById.innerHTML = a;
 			$('#formulario').append('<input id=' +i+ ' type="text" value=' +a+ '>');
 			$('#NombreProyectoE').text('some text');
-			var a = proyectos[i].nombre;
 			$('#NombreProyectoE').html('<p>' +proyectos[i].nombre+' </p>');
 		}
 
